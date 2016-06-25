@@ -20,7 +20,7 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  site_name: 'Rails Skeleton'
+  site_name: 'NoteKeeper'
 
   flashes:
     login_success: 'Welcome %{username}'
@@ -35,7 +35,7 @@ en:
         account_details: 'Account details'
 
       footer:
-        content: Rails Skeleton is open source. If you notice any issues, 
+        content: NoteKeeper is open source. If you notice any issues, 
           please open an issue %{link}.
     devise:
       sessions:

@@ -7,7 +7,9 @@
 
     visit root_path
 
-    click_on 'Login' 
+    within('.site_header') do
+      click_on 'Login'
+    end
   end
   
   scenario 'with valid details' do

@@ -11,7 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160522185401) do
+ActiveRecord::Schema.define(version: 20160625142241) do
+
+  create_table "colours", force: :cascade do |t|
+    t.string   "css_class",  limit: 40
+    t.datetime "created_at",            null: false
+    t.datetime "updated_at",            null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  limit: 255, default: "", null: false

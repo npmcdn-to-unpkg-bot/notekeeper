@@ -1,0 +1,18 @@
+/*=============================================
+
+= Shared
+
+=============================================*/
+.flash_message {
+  color: white;
+  font-weight: $medium;
+  font-size: 1rem;
+  text-align: center;
+  padding: 1.1rem 1rem;
+   &.flash_alert {
+     background: $error_color;
+   }
+   &.flash_notice {
+     background: $success_color;
+   }
+}

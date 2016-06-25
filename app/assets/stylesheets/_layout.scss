@@ -1,0 +1,79 @@
+/*=============================================
+= Html
+=============================================*/
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+/*=============================================
+= Body
+=============================================*/
+body {
+  background: $cream;
+  margin-bottom: 90px;
+}
+
+/*=============================================
+= Theme container
+=============================================*/
+.theme__container {
+  @extend .container;
+}
+
+/*=============================================
+= Theme column --small
+=============================================*/
+.theme__column--small {
+  @extend .col-md-6;
+}
+
+/*=============================================
+= Site content
+=============================================*/
+.site_content {
+  padding-top: 3rem;
+  padding-bottom: 90px;
+}
+
+/*=============================================
+= Site header links
+=============================================*/
+.site_header__links {
+  padding-left: 50px;;
+  position: relative;
+  a {
+    font-size: 1rem;
+  }
+}
+
+/*=============================================
+= Site header avatar
+=============================================*/
+.site_header {
+  &__avatar {
+    @include valign_mid; left: 0;
+  }
+}
+
+/*=============================================
+= Site footer
+=============================================*/
+.site_footer {
+  background: $turquoise;
+  border-top: 1px solid $light_grey;
+  color: $white;
+  font-weight: $medium;
+  height: 90px;
+  position: absolute; right: 0; bottom: 0; left: 0;
+  .container  {
+    padding-top: 33px;
+  }
+  p {
+    font-size: .9rem;
+  }
+  a { 
+    color: inherit;
+    text-decoration: underline; 
+  }
+}

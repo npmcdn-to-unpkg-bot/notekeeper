@@ -1,0 +1,11 @@
+= form_object.input :avatar, as: :file,
+  input_html: { data: { 'temporary_image_chooser': true },
+  class: 'temporary_image_chooser' },
+  label: false,
+  wrapper: false
+
+.image_preview__holder
+  = image_tag image, class: 'img-responsive image_preview', id: 'image_preview'
+
+  %span.image_preview__choose_button{'data-image_preview__choose_image': 'true'} 
+    Choose image

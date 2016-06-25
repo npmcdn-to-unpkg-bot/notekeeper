@@ -1,0 +1,123 @@
+/*=============================================
+
+= Mixins
+
+=============================================*/
+
+/*
+--------------------------------------------------------------
+M I X I N S
+-------------------------------------------------------------- */
+/* Mixin for clearing floats */
+@mixin clearfix {
+  &:after {
+    clear: both;
+    content: "";
+    display: block;
+  }
+}
+
+/* Center align element */
+@mixin align_mid {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/* Vertically align selector */
+@mixin valign_mid {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+
+/* Horizontally align selector */
+@mixin halign_mid {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+
+/* Constrain element to max-width and height of parent */
+@mixin constrain {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+@mixin xs_padding {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@mixin md_padding {
+  padding-right: 75px;
+  padding-left: 75px;
+}
+
+/* Apply styles to first item */
+@mixin first-item() {
+    &:first-of-type {
+      @content;
+    }
+}
+
+/* Apply styles to last item */
+@mixin last_item() {
+    &:last-of-type {
+      @content;
+    }
+}
+
+
+/* Quick mixin for displaying a cursor on hover of selector */
+@mixin pointer_hover {
+	&:hover { cursor: pointer; }
+}
+
+
+/* Reset position of element to auto */
+@mixin reset_position {
+  top: auto; right: auto; bottom: auto; left: auto;
+  transform: none; translate: none;
+}
+
+
+/* Quick mixin for adding an on hover color */
+@mixin hover_color($color) {
+	&:hover { color: $color; }
+}
+
+
+/* Min width media query mixin */
+@mixin min_width($breakpoint) {
+  @media screen and (min-width: $breakpoint) {
+    @content;
+  }
+}
+
+/* Max width media query mixin */
+@mixin max_width($breakpoint) {
+  @media screen and (max-width: $breakpoint) {
+    @content;
+  }
+}
+
+/* Between width media query mixin */
+@mixin between_widths($min_breakpoint, $max_breakpoint) {
+  @media screen and (min-width: $min_breakpoint) and (max-width: 
+    $max_breakpoint) {
+    @content;
+  }
+}
+
+
+/*=============================================
+= Theme box shadow
+=============================================*/
+@mixin theme_box_shadow {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
+}

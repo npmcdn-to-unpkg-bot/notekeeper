@@ -1,0 +1,32 @@
+/*=============================================
+
+= Helpers
+
+=============================================*/
+
+.v_space_1rem { height: 1rem; }
+.v_space_2rem { height: 2rem; }
+.v_space_3rem { height: 3rem; }
+.v_space_4rem { height: 4rem; }
+.v_space_5rem { height: 5rem; }
+.v_space_6rem { height: 6rem; }
+
+
+.h_space_1rem { display: inline-block; width: 1rem; }
+.h_space_2rem { display: inline-block; width: 2rem; }
+.h_space_3rem { display: inline-block; width: 3rem; }
+.h_space_4rem { display: inline-block; width: 4rem; }
+.h_space_5rem { display: inline-block; width: 5rem; }
+.h_space_6rem { display: inline-block; width: 6rem; }
+
+
+.img-responsive { height: auto; max-width: 100%;  }
+
+.full_width { display: block; width: 100%;  }
+
+.relative { position: relative;  }
+
+.visually_hidden {
+  position: absolute !important; top: -9999px !important; left: -9999px
+  !important;
+}

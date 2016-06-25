@@ -1,0 +1,9 @@
+%li.dropdown
+  = link_to '#', class: 'dropdown-toggle account_dropdown_toggle', data: {toggle: 'dropdown'}, 
+  role: 'button', aria_haspopup: 'true', aria_expanded: 'false' do
+    = t('views.layouts.header.account_dropdown')
+    %span.caret
+  %ul.dropdown-menu.site_header__dropdown_menu
+    %li
+      = link_to t('views.layouts.header.account_details'), edit_user_registration_path
+      = link_to t('views.layouts.header.logout'), destroy_user_session_path, method: :delete

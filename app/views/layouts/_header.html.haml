@@ -1,0 +1,31 @@
+%nav.navbar.navbar-inverse.site_header
+  .container
+
+    .navbar-header
+      
+      = render partial: 'layouts/partials/toggle_button'
+
+      = link_to t('site_name'), root_path, class: 'navbar-brand site_header__site_name'
+
+    .collapse.navbar-collapse#account_dropdown
+    
+      %ul.nav.navbar-nav.navbar-right.site_header__links
+        - if user_signed_in?
+
+          = image_tag current_user.avatar(:thumb), class: 'site_header__avatar'
+
+          = render partial: 'layouts/partials/account_dropdown'
+
+        - else
+          %li
+            = link_to t('views.layouts.header.login'), new_user_session_path
+          %li
+            = link_to t('views.layouts.header.register'), new_user_registration_path
+
+
+
+
+
+
+
+

@@ -16,3 +16,11 @@
      background: $success_color;
    }
 }
+
+/*=============================================
+= Border effect
+=============================================*/
+@mixin border_effect {
+  border-radius: 3px;
+  box-shadow: 0 1px 3px 2px #ddd
+}

@@ -10,4 +10,6 @@ class User < ActiveRecord::Base
   validates_attachment :avatar,
     content_type: { content_type: /^image\/(png|gif|jpeg)/ },
     size: { less_than: 5.megabytes }
+
+  has_many :notes, dependent: :destroy
 end

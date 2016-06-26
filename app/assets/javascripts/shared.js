@@ -9,4 +9,8 @@ $(document).ready(function() {
     $('[data-temporary-image-chooser]').trigger('click');
   });
 
+  $('.masonry_grid').masonry({
+    itemSelector: '.masonry_grid__item',
+  });
+
 });

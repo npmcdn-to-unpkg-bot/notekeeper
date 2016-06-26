@@ -2,7 +2,4 @@
 
   - if !@notes.empty?
     .notes
-      - @notes.each do |note|
-        %article{:class => "col-sm-6 col-md-4 note #{note.colour.css_class if note.colour}"}
-          .note__inner
-            %h1.note__title= note.title
+      = render @notes

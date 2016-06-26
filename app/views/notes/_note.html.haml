@@ -2,3 +2,5 @@
   .note__inner
     %h1.note__title= note.title
     .note__content= note.content
+    = link_to t('views.notes.partials.note.edit_link'), edit_note_path(note),
+      class: 'note__edit_link'

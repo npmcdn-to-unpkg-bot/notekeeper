@@ -31,6 +31,7 @@ en:
         login: 'Login'
         logout: 'Log out'
         register: 'Register'
+        new_note_link: 'New note'
         account_dropdown: 'My Account'
         account_details: 'Account details'
 
@@ -44,3 +45,13 @@ en:
       registrations:
         new:
           page_title: 'Register'
+
+    notes:
+      new:
+        page_title: 'New note'
+        submit_link: 'Create note'
+      create:
+        success_flash: 'Note successfully created!'
+      partials:
+        note:
+          edit_link: 'Edit'

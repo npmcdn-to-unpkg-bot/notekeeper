@@ -11,8 +11,10 @@
     
       %ul.nav.navbar-nav.navbar-right.site_header__links
         - if user_signed_in?
-
-          = image_tag current_user.avatar(:thumb), class: 'site_header__avatar'
+          
+          %li
+            = link_to t('views.layouts.header.new_note_link'), new_note_path, 
+              class: 'new_note_link'
 
           = render partial: 'layouts/partials/account_dropdown'
 
